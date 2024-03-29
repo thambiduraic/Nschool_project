@@ -8,9 +8,12 @@
 
 /* header section */
 
+.wraper {
+    width: 70%;
+    margin: auto;
+}
+
 .header {
-    margin: 0;
-    padding: 0;
     border-bottom: thin solid #ccc;
 }
 
@@ -34,7 +37,6 @@ img {
     border-radius: 20%;
     border: 1px solid #5f5959;
     background-color: #e2e7ea;
-
 }
 
 .mail-img img {
@@ -87,12 +89,124 @@ svg:hover path.icon, svg:hover polygon.icon{
 
 /* header main section */
 
+.header-main ul {
+    gap: 1.5rem;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 a:hover {
     color: #f17424 !important;
 }
 
 /* end */
 
+/* banner section */
+
+.banner {
+    padding: 20px 0px;
+}
+
+.span-1 {
+    font-size: 3vw;
+    padding-right: 5px;
+    color: #19467E;
+}
+
+.span-2 {
+    font-size: 3vw;
+    color: #f17424;
+}
+
+.lorem-p {
+    padding: 10px 0px;
+    font-size: 1.5vw;
+}
+
+.button {
+    padding: 5px 20px;
+    background-color: #19467E;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.mask-group-1 {
+    position: absolute;
+    width: 14%;
+    height: 61%;
+    top: 35%;
+    left: -1%;
+}
+
+/* end */
+
+/* modal start */
+
+.modal-div {
+    float: right;
+    width: 303px;
+    height: 330px;
+    border: thin solid #ccc;
+    padding: 2%;
+    position: absolute;
+    top: 28%;
+    left: 75%;
+    transition: .3s all ease-in-out;
+    background-color: #ffffff;
+}
+
+.closebtn {
+    float: right;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.col-form-label{
+    font-size: 11px;
+}
+
+#recipient-name {
+    font-size: 11px;
+}
+
+.modal-footer {
+    margin: 2px;
+}
+
+.btn {
+    background-color: #19467E;
+    color: #ffffff;
+    margin: 2px auto;
+    padding: 2px 20px;
+    font-size: 11px;
+}
+
+.quick-enquiry {
+    position: absolute;
+    top: 43.4%;
+    left: 66%;
+    rotate: -90deg;
+}
+
+.quick {
+    background-color: #f17424;
+    color: #ffffff;
+    padding: 14px 50px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* end */
 
 /* media query  */
 
@@ -105,6 +219,16 @@ a:hover {
         padding-left: 0px;
     }
 
+    .header-main ul {
+        gap: 0px;
+    }
+
+}
+
+@media (max-width:1024px) {
+    .header-right li a .mail-id, .header-right li a .contact {
+        display: none;
+    }   
 }
 
 /* end */
