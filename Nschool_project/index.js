@@ -1,7 +1,7 @@
-$(document).ready(function(){
-    $("#OpenForm").click(function(){
-        $(".feedback_form_area").animate({
-            width: "toggle"
-        });
-    });
-});
+function myFunction() {
+    document.getElementById("feedback-form").style.display="block";
+}
+function closeNav() {
+    document.getElementById("feedback-form").style.display="none";
+}
+
