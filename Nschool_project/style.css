@@ -8,13 +8,15 @@
 
 /* header section */
 
-.wraper {
-    width: 80%;
+/* .wraper {
+    width: 100%;
+    padding: 0% 10%;
     margin: auto;
-}
+} */
 
 .header {
     border-bottom: thin solid #ccc;
+    padding: 0% 10%;
 }
 
 .header-left {
@@ -27,6 +29,8 @@
     text-decoration: none;
     list-style: none;
 }
+
+
 
 img {
     height: 20px;
@@ -43,14 +47,15 @@ img {
 .mail-img img {
     height: 20px;
     width: 20px;
+    padding-bottom: 5px;
 }
 
 ul {
     margin-bottom: 0px;
 }
 
-a {
-    font-size: 15px;
+.header-left li a {
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -71,18 +76,18 @@ a {
 }
 
 svg {
-    height: 20px !important;
-    width: 20px !important;
+    height: 40px !important;
+    width: 26px !important;
 }
 
 .instagram {
-    height: 16px !important;
+    height: 40px !important;
     width: 20px !important;
 }
 
 .linkedin {
-    height: 17px !important;
-    width: 20px !important;
+    height: 40px !important;
+    width: 22px !important;
 }
 
 svg:hover path.icon,
@@ -94,6 +99,7 @@ svg:hover polygon.icon {
     list-style: none;
     text-decoration: none;
     float: right;
+    margin-top: 5px;
 }
 
 .header-right li {
@@ -104,6 +110,10 @@ svg:hover polygon.icon {
 /* end */
 
 /* header main section */
+
+.header-main {
+    padding: 0% 10%;
+}
 
 .logo {
     width: 120px;
@@ -132,7 +142,7 @@ a:hover {
 /* banner section */
 
 .banner {
-    padding: 20px 0px;
+    padding: 0% 11%;
 }
 
 .span-1 {
@@ -190,7 +200,7 @@ a:hover {
 /* modal start */
 
 .modal-div {
-    position: fixed;
+    position: absolute;
     top: 15%;
     right: 0;
     z-index: 100;
@@ -204,7 +214,7 @@ a:hover {
 .feedback_form_area {
     position: relative;
     right: 10px;
-    top: 80px;
+    top: 10px;
     width: auto;
     display: none;
     overflow: hidden;
@@ -251,7 +261,7 @@ a:hover {
     background-color: #f17424;
     color: #fff;
     transform: rotate(-90deg);
-    top: 45%;
+    top: 30%;
     border-radius: 5px;
     height: 40px;
     width: 280px;
@@ -259,6 +269,7 @@ a:hover {
     text-align: center;
     text-decoration: none;
     padding: 0px 10px;
+    z-index: 100;
 }
 
 .quick:hover {
@@ -271,7 +282,8 @@ a:hover {
 /* placement section start */
 
 .placement {
-    margin: 60px auto;
+    margin: 80px auto;
+    padding: 0px 140px;
 }
 
 .placement .span-1 {
@@ -313,8 +325,8 @@ a:hover {
 .netflix {
 
     padding-top: 30px;
-    height: 97px !important;
-    width: 200px !important;
+    height: 90px !important;
+    width: 190px !important;
 
     /* padding-top: 60px;
     height: 100px !important;
@@ -393,7 +405,49 @@ a:hover {
 
 /* ---------------------------------------------------------------- */
 
+.Vector-1 {
+    position: absolute;
+    width: 18% !important;
+    height: 70% !important;
+    background: transparent !important;
+    top: 640px;
+    right: -90px;
+    z-index: 5;
+}
 /* placement section end */
+
+/* courses section start */
+
+.courses {
+    width: fit-content;
+    margin: 80px 0px;
+    padding-top: 80px;
+    background-color: #f6fafb;
+    overflow-x: visible;
+}
+
+.courses .span-1, .courses .span-2 {
+    font-weight: 600 !important;
+    font-size: 48px;
+}
+
+.courses .para {
+    /* padding-top: 20px; */
+    padding:20px 150px ;
+    text-transform: capitalize;
+    padding-top: 20px;
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: #333333;
+}
+
+.img-1 {
+    background-image: url(/Nschool_project/NS_PNG/Group\ 1000006176.png);
+    width: 40%;
+    min-height: 100px;
+}
+
+/* courses section end */
 
 /* media query  */
 
@@ -413,6 +467,17 @@ a:hover {
         gap: 0px;
     }
 
+}
+
+@media (min-width: 1440px) {
+    .Vector-1 {
+        position: absolute;
+        width: 18% !important;
+        height: 50% !important;
+        top: 680px;
+        right: -70px;
+        z-index: 5;
+    }
 }
 
 @media (max-width:1024px) {
