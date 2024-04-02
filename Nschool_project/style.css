@@ -436,17 +436,48 @@ a:hover {
     padding:20px 150px ;
     text-transform: capitalize;
     padding-top: 20px;
-    font-size: 1.3vw;
+    font-size: 1.3vm;
+    font-weight: 400;
+    color: #333333;
+}
+.bg-img
+{
+    background-image: url("/Nschool_project/NS_PNG/Group\ 1000006176.png");
+    background-repeat: no-repeat;
+    width: 50%;
+    min-height: 300px;
+}
+
+.courses .btns {
+    background-color: #f6f7fb;
+    border: thin solid #a8c8ef;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 12px;
+}
+
+.para-corses {
+    font-size: 12px;
     font-weight: 400;
     color: #333333;
 }
 
-.img-1 {
-    background-image: url(/Nschool_project/NS_PNG/Group\ 1000006176.png);
-    width: 40%;
-    min-height: 100px;
+.fullstack-div {
+    display: grid;
+    place-items: center;
 }
 
+.background-circle {
+    background-image: url(/Nschool_project/NS_PNG/Group\ 1000006003_cleanup.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fullstack {
+    width: 40px;
+    height: 40px;
+}
 /* courses section end */
 
 /* media query  */
