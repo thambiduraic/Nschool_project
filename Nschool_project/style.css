@@ -4,16 +4,36 @@
     box-sizing: border-box;
     text-decoration: none !important;
 }
+
+.relative {
+    position: relative; 
+}
+
+.absolute {
+    position: absolute;
+}
+
+.vector-removebg img{
+    width: 100px;
+    height: auto;
+}
+
+.vector2 img{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    bottom: 80px;
+    left: -1px;
+    z-index: -1;
+}
+
+
 /* ---------------------------------------------------------------------------------------------- */
 /* header section */
 
 .header {
-    /* border-bottom: thin solid #ccc; */
-    padding: 0% 10%;
     position: sticky;
     top: 0px;
-    z-index: 10;
-    background-color: #ffffff;
 }
 
 .header-left {
@@ -82,7 +102,7 @@ ul {
     color: #f17424;
 }
 .header-right li a:hover {
-    color: #5f5959 !important;
+    color: #5f5959;
 }
 
 svg {
@@ -130,12 +150,12 @@ svg:hover polygon.icon {
 /* header main section */
 /* ------------------------------------------------------------------------------------------------- */
 .header-main {
-    padding: 0% 10%;
+    /* padding: 0% 10%; */
     position: sticky;
-    top: 60px;
+    top: 0px;
     z-index: 10;
     background-color: #ffffff;
-    box-shadow: 5px 5px 1px #f1f0f0;
+    box-shadow: -4px 10px 5px #f1f0f0;
 }
 
 .header-main a{
@@ -143,8 +163,8 @@ svg:hover polygon.icon {
 }
 
 .logo {
-    width: 120px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
 }
 
 .header-main ul {
@@ -160,7 +180,10 @@ svg:hover polygon.icon {
     padding-right: 0px;
 }
 
-a:hover {
+.header-main li a:hover{
+    color: #f17424;
+}
+.nav-link.active{
     color: #f17424 !important;
 }
 
@@ -176,10 +199,6 @@ a:hover {
 
 /* banner section */
 /* ------------------------------------------------------------------------------------------------------- */
-
-.banner {
-    padding: 0% 11%;
-}
 
 .banner-col-1 {
     padding-top: 20px;
@@ -254,8 +273,6 @@ a:hover {
 
 .feedback_form_area {
     position: relative;
-    /* right: 10px;
-    top: 105px !important; */
     bottom: 0px;
     width: 280px;
     display: none;
@@ -267,7 +284,7 @@ a:hover {
 }
 
 .feedback_form_area_inner {
-    width: 200px !important;
+    width: 100%;
     height: 325px !important;
     color: #fff;
     padding: 15px;
@@ -299,11 +316,11 @@ a:hover {
 
 .quick {
     position: absolute;
-    left: -107px !important;
+    left: -107px;
     background-color: #f17424;
     color: #fff;
     transform: rotate(-90deg);
-    top: 40% !important;
+    top: 40% ;
     border-radius: 5px 5px 0px 0px;
     height: 40px !important;
     width: 180px !important;
@@ -319,17 +336,10 @@ a:hover {
     background-color: #f17424;
     color: #ffffff !important;
 }
-/* ------------------------------------------------------------------------------------------------------- */
+
 /* end */
 
-
 /* placement section start */
-/* ---------------------------------------------------------------------------------------- */
-
-.placement {
-    margin: 80px auto;
-    padding: 0px 140px;
-}
 
 .placement .span-1 {
     font-size: 40px;
@@ -344,33 +354,27 @@ a:hover {
 .placement .para {
     text-transform: capitalize;
     padding-top: 20px;
-    font-size: 16px !important;
     font-weight: 400;
     color: #333333;
 }
 
 .placement img {
-    width: 160px;
+    width: 104px;
     height: auto;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
 }
 
-/* --------------------------------------------------------- */
 
 .placement-3 {
     border: thin solid red;
 }
   
-/* ---------------------------------------------------------------- */
-
 .Vector-1 {
     rotate: -180deg;
-    position: absolute;
     width: 10% !important;
-    height: 49% !important;
-    background: transparent !important;
-    top: 750px;
-    right: 0px !important;
+    height: 232px !important;
+    bottom: -183px;
+    right: -48px;
     z-index: 5;
 }
 
@@ -394,11 +398,7 @@ a:hover {
 }
 
 .courses .para {
-    padding-top: 20px;
-    padding : 20px 130px;
     text-transform: capitalize;
-    padding-top: 20px;
-    font-size: 16px !important;
     font-weight: 400;
     color: #333333;
 }
@@ -408,30 +408,18 @@ a:hover {
     background-image: url(/Nschool_project/NS_PNG/Group\ 1000006176.png);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 320px !important;
-    width: 450px !important;
 }
 
 .bg-mask-2{
-    position: absolute;
-    width: 110px;
-    height: 120px;
-    float: left;
-    left: 48px;
-    top: 1285px;
+    z-index: 1;
 }
 
 .mask-img-2 {
-    position: absolute;
-    float: right;
+    right: -48px;
     width: 110px;
     height: 120px;
-    right: 0px;
-    top: 320%;
-}
-
-.courses-h4 {
-    /* margin-top: 20px; */
+    bottom: 0px;
+    z-index: 1;
 }
 
 .btns {
@@ -449,15 +437,9 @@ a:hover {
     height: 20px;
 }
 
-.para-corses {
-    font-size: 12px;
+.para-courses {
     font-weight: 400;
     color: #333333;
-}
-
-.fullstack-div {
-    height: 350px;
-    line-height: 300px;
 }
 
 .background-circle {
@@ -472,7 +454,6 @@ a:hover {
 }
 
 /* courses section end */
-
 
 .offer {
     background-color: #19467e;
@@ -518,8 +499,8 @@ a:hover {
 
 .offer-p {
     color: #19467e;
-    font-size: 16px !important;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 500;
     text-align: center;
     padding: 10px;
 }
@@ -561,15 +542,6 @@ a:hover {
     margin: auto; 
 }
 
-.vector2 img{
-    position: relative;
-    width: 100px;
-    height: 50px;
-    bottom: 80px;
-    left: 14px;
-    z-index: -1;
-}
-
 .vector3 img {
     width: 80px;
     height: auto;
@@ -595,11 +567,151 @@ a:hover {
     font-size: 13px;
     margin-bottom: 0px;
     line-height: 22px;
+    color: #666666;
+    font-weight: 500;
+}
+
+.s-col-4 {
+    padding: 0px;
+}
+
+.serv-col-4 {
+    padding-left: 0px;
 }
 
 /* media query  */
 
 /* --------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width:426px) {
+
+    .placement .para, .courses .para, .offer .para {
+        text-align: justify !important;
+    }
+
+    .vector4 img {
+        left: 26px !important;
+        /* width: 55px; */
+    }
+
+    .quick {
+        left: -108px !important;
+        top: 158px !important;
+    }
+
+    .vector2 img {
+        left: 8px !important;
+    }
+    
+    .placement .span-1, .placement .span-2, .courses .span-1, .courses .span-2, .offer .span-1, .offer .span-2 {
+        font-size: 32px;
+    }
+
+    .placement, .courses .para, .offer .para {
+        padding: 20px 34px 0px 44px !important;
+    }
+
+    .placement img {
+        width: 100% !important;
+        height: 80% !important;
+    }
+
+    .offer {
+        padding-top: 45px !important;
+    }
+
+    .offer .para {
+        padding: 0px 9px 0px 30px !important;
+    }
+
+    .para1-s {
+        text-align: justify;
+        margin-bottom: 10px !important;
+        width: 90%;
+    }
+
+    .Untitled-s {
+        margin: 20px auto !important;
+        width: 96% !important;
+    }
+
+    .services {
+        padding: 40px 0px 20px 0px;
+    }
+
+    .s-col-4 {
+        padding: 0px;
+    }
+    
+    .serv-col-4 {
+        padding-left: 0px;
+    }
+
+    .col-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+        padding: 0px;
+    }
+    
+    .vector4 img {
+        left: 32px !important;
+    }
+
+    .vector2 img {
+        left: 7px !important;
+    }
+}
+
+@media only screen and (max-width:376px) {
+    .header-main {
+        padding: 0px 35px 0px 26px !important;
+        top: 0px;
+    }
+
+    .banner .span-1, .banner .span-2, .placement .span-1, .placement .span-2, .courses .span-1, .courses .span-2 {
+        font-size: 26px !important;
+    }
+
+    .courses {
+        padding: 0px;
+    }
+
+    .courses-1 h1 {
+        width: 90%;
+        margin: auto;
+    }
+
+    .lorem-p {
+        font-size: 12px;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+
+    .quick {
+        left: -111px !important;
+        height: 30px !important;
+        width: 188px !important;
+    }
+
+    .feedback_form_area {
+        top: 65px !important;
+    }
+
+    .courses-h4 {
+        margin-top: -3px !important;
+    }
+
+    .offer h3 {
+        padding: 0px !important;
+    }
+
+    .s-row, .s1-row {
+        display: flex;
+        justify-content: space-between;
+    }
+}
 
 /* Mobile device (portrait and landscape) */
 
@@ -618,21 +730,13 @@ a:hover {
     /* banner start */
 
     .banner-col {
-        padding: 30px 0px 20px 0px;
+        padding: 0px 0px 10px 0px;
     }
-
-    /* .banner-col-1 {
-        padding-top: 20px;
-        width: auto;
-    } */
 
     .lorem-p {
         padding: 0px 0px 10px 0px;
-        margin-left: 0px;
-        font-size: 12px !important;
         font-weight: 600;
-        color: #333333;
-        width: 100% !important;
+        /* width: 70%; */
     }
 
     .banner {
@@ -650,14 +754,11 @@ a:hover {
     }
 
     .img-fluid {
-        width: 74%;
-        height: auto;
         margin-top: 60px;
-        margin-left: 50px;
     }
 
     .quick {
-        left: -111px;
+        left: -108px;
         color: #fff;
         top: 35%;
         height: 34px;
@@ -667,12 +768,12 @@ a:hover {
 
     .courses {
         margin: 20px 0px 0px 0px;
-        padding-top: 60px;
-        padding-bottom: 80px;
+        padding-top: 40px;
+        padding-bottom: 30px;
     }
 
     .feedback_form_area {
-        top: 75px !important;
+        top: 87px;
         height: 294px !important;
     }
 
@@ -692,33 +793,39 @@ a:hover {
     .form-control {
         font-size: 10px !important;
     }
+/* ------------------------------------------------------------------------------- */
 
-    .feedback_form_area_inner {
-        width: 210px !important;
-    }
+.slider-container {
+    width: 100%;
+    height: 100px;
+}
 
-     /* placement section */
+.slider-container>*>* {
+    height: 100px !important;
+}
 
+
+/* ------------------------------------------------------------------------------------ */
     .placement {
-        margin: 80px auto;
+        margin: 55px 0px 0px 0px !important;
         padding: 0px 48px;
     }
 
-    .banner .span-1, .banner .span-2, .placement .span-1, .placement .span-2, .courses .span-1, .courses .span-2, .offer .span-1, .offer .span-2 {
-        font-size: 30px !important;
-        line-height: normal;
+    .placement img {
+        width: 30%;
+        height: 34%;
+    }
+
+    .banner .span-1, .banner .span-2 {
+        width: 70%;
     }
 
     .placement-1 {
-        text-align: left !important;
+        text-align: center;
     }
 
     .placement-3 {
         padding: 0px;
-    }
-
-    .courses h1{
-        padding: 0px 0px 0px 50px;
     }
 
     .offer h3 {
@@ -730,7 +837,7 @@ a:hover {
         margin-bottom: 5px;
     }
 
-    .para-corses {
+    .para-courses {
         font-size: 10px;
         font-weight: 400;
         color: #333333;
@@ -746,8 +853,12 @@ a:hover {
 
     .fullstack-div {
         min-height: 200px;
-        line-height: 346px;
-        padding-left: 46px !important;
+        line-height: 230px;
+        padding-left: 32px;
+    }
+
+    .background-circle {
+        line-height: 250px;
     }
 
     .fullstack {
@@ -759,6 +870,9 @@ a:hover {
         margin-bottom: .5rem !important;
     }
 
+    .mt-5 {
+        margin-top: 2rem !important;
+    }
     .courses .btns {
         padding: 2px 8px;
         margin: 4px;
@@ -766,9 +880,8 @@ a:hover {
     }
 
     .offer .para {
-        font-size: 12px;
-        text-align: justify;
-        padding: 0px 44px 0px 35px;
+        text-align: center;
+        padding: 0px 10px 0px 10px;
     }
 
     .offer-h2 {
@@ -778,7 +891,7 @@ a:hover {
     .justify-content-evenly {
         justify-content: space-around !important;
         margin: auto;
-        width: 98%;
+        /* width: 98%; */
     }
 
     .col-12-c {
@@ -793,20 +906,13 @@ a:hover {
         padding: 0px;
     }
 
-    .text-center {
-        text-align: left !important;
-    }
-
     .placement .para {
-        font-size: 12px !important;
-        text-align: justify;
+        text-align: center;
     }
 
     .courses .para {
-        padding-top: 20px;
         padding: 10px 50px;
-        text-align: justify;
-        font-size: 12px;
+        text-align: center;
     }
 
     .bg-mask-2 {
@@ -818,13 +924,22 @@ a:hover {
     }
 
     /* services section start */
+
+    #why-col {
+        order: 1;
+    }
+
+    #ns-png-col {
+        order: 2;
+    }
+
     .vector4 img {
-        left: 40px;
+        left: 45px;
         width: 55px;
     }
 
     .vector2 img {
-        left: 20px;
+        left: 8px;
         width: 90px;
         bottom: 70px;
         height: 38px;
@@ -841,38 +956,46 @@ a:hover {
         width: 100%;
         padding-top: 5px;
         text-align: justify;
-        font-size: 12px;
+        /* font-size: 12px; */
     }
 
-    .para1-s {
-        font-size: 10px;
-        text-align: justify;
+    .Untitled-s {
+        width: 60%;
+        height: auto;
+        margin: 0% 20%;
     }
 
-    .h4-s {
-        font-size: 20px;
-    }
-
-    .service-col {
-        padding: 0rem 1rem;
+    .serv-col-4 {
+        padding-left: 0px;
+        /* width: 60%; */
         margin-bottom: 20px;
     }
 
-    .nschool-s, .why-s {
-        font-size: 20px;
+    .ser-gap {
+        padding: 0px 0px 0px 00px;
+        width: 60%;
+    }
+
+    .services {
+        padding: 80px 0px 20px 0px;
+        margin: 0% 5%;
+    }
+
+    .para1-s {
+        text-align: justify;
     }
 }
 
 /* Tablet Devices (portrait and landscape) */
 
-@media only screen and (min-width:769px) and (max-width:1024px) {
+@media only screen and (min-width:769px) and (max-width:1025px) {
     /* css for tablet devices */
     .header {
-        padding: 0px 36px 0px 68px;
+        padding: 0px 50px 0px 63px;
     }
 
     .header-main {
-        padding: 0px 48px 0px 62px;
+        padding: 0px 48px 0px 43px;
     }
 
     .header-right li a .mail-id,
@@ -887,6 +1010,11 @@ a:hover {
 
     .header-main ul {
         gap: 0px;
+    }
+
+    .header-main ul li a {
+        font-size: 18px !important;
+        padding-left: 40px !important;
     }
 
     /* banner start */
@@ -908,9 +1036,9 @@ a:hover {
     }
 
     .quick {
-        left: -115px;
+        left: -110px;
         color: #fff;
-        top: 42%;
+        top: 180px;
         height: 37px;
         width: 193px;
         font-size: 22px;
@@ -938,8 +1066,22 @@ a:hover {
 
     .placement {
         margin: 80px auto;
-        padding: 0px 80px;
+        padding: 0px 62px;
     }
+
+    .placement-1 {
+        text-align: center;
+    }
+
+    .carousel-div {
+        padding: 0px;
+    }
+
+    .placement img {
+        width: 146px;
+        height: auto;
+    }
+
 
     .banner .span-1, .banner .span-2, .placement .span-1, .placement .span-2, .courses .span-1, .courses .span-2 {
         font-size: 35px !important;
@@ -947,13 +1089,11 @@ a:hover {
     }
 
     .placement .para {
-        text-align: justify;
         padding: 15px 0px 0px 0px;
     }
 
     .courses .para {
-        padding : 20px 57px 0px 77px;
-        text-align: justify;
+        padding : 20px 65px 0px 65px;
     }
 
     .para1-s {
@@ -969,35 +1109,38 @@ a:hover {
     .fullstack-div {
         min-height: 375px;
         line-height: 375px;
-        padding-left: 61px !important;
+        padding-left: 50px;
     }
 
-    .para-corses {
-        font-size: 14px;
+    .para-courses {
+        font-size: 16px;
         font-weight: 400;
     }
 
     .courses .btns {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .courses-h4 {
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
     .bg-img {
-        height: 385px !important;
-        width: 552px !important;
+        height: 330px;
+        width: 456px;
         margin: auto;
     }
 
-    .bg-mask-2 {
-        left: 128px !important;
-        top: 1228px !important;
+    .col-8 {
+        padding: 0px;
     }
 
-    .mask-img-2 {
-        top: 451%;
+    .col-12 {
+        padding: 0px;
+    }
+
+    .bg-mask-2, .mask-img-2  {
+        display: none;
     }
 
     .justify-content-evenly {
@@ -1018,8 +1161,7 @@ a:hover {
     }
     
     .offer .para {
-        text-align: justify;
-        padding: 0px 19px 0px 33px;
+        padding: 0px 23px 0px 21px;
     }
 
     .vector4 img {
@@ -1030,11 +1172,15 @@ a:hover {
         margin-top: -40px;
     }
 
-    .vector2 img {
-        left: 12px;
-        top: -41px;
+    .offer-p {
+        padding: 12px;
     }
 
+    .vector2 img {
+        left: 2px;
+        top: -41px;
+    }
+    
     .service-col {
         padding: 1rem 1rem;
     }
@@ -1045,7 +1191,7 @@ a:hover {
 @media only screen and (min-width:1025px) and (max-width:1440px) {
     /* css for laptop devices */
     .header {
-        padding: 0px 130px 0px 138px;
+        padding: 0px 95px 0px 103px;
     }
 
     .header-right li a .mail-id, .header-right li a .contact {
@@ -1063,11 +1209,14 @@ a:hover {
     }
 
     /* header main */
+    .header-main {
+        padding: 0px 103px;
+    }
 
     .header-main ul li a {
         font-size: 20px;
     }
-
+    
     .header-main ul li {
         padding-left: 20px;
     }
@@ -1078,7 +1227,7 @@ a:hover {
 
     .banner {
         margin: 0px;
-        padding: 0px 80px;
+        padding: 0px 75px;
     }
 
     .banner .span-1, .banner .span-2 {
@@ -1095,9 +1244,9 @@ a:hover {
     }
 
     .quick {
-        left: -155px;
+        left: -111px;
         color: #fff;
-        top: 30%;
+        top: 40%;
         height: 50px;
         width: 254px;
         font-size: 30px;
@@ -1110,13 +1259,21 @@ a:hover {
     .feedback_form_area_inner {
         width: 300px !important;
     }
+
+    .mask-group-1 {
+        width: 5%;
+        height: 65%;
+        top: 30%;
+        left: 0%;
+    }
+
     /* banner end */
 
     /* placement section */
 
     .placement {
         margin: 80px auto;
-        padding: 0px 90px;
+        padding: 0px 55px;
     }
 
     .placement-3 {
@@ -1127,12 +1284,23 @@ a:hover {
         font-size: 40px !important;
     }
 
+    .slider-container {
+        width: 100%;
+        margin: auto !important;
+    }
+
+    .swiffy-slider {
+        --swiffy-slider-item-gap: 6rem;
+        width: 90%;
+        margin: auto;
+    }
+
     .offer .offer-h2 {
         font-size: 40px;
     }
 
     .services .vector4 img {
-        left: 32px !important;
+        left: 36px !important;
     }
 
     .courses .span-1, .courses .span-2 {
@@ -1141,13 +1309,14 @@ a:hover {
     }
 
     .courses .para {
-        padding: 20px 150px;
+        padding: 20px 113px;
         text-align: center;
-        font-size: 20px;
+        font-size: 16px;
     }
 
-    .para-corses {
-        font-size: 15px;
+    .para-courses {
+        font-size: 13px;
+        width: 80%;
     }
     
     .courses .btns {
@@ -1160,14 +1329,10 @@ a:hover {
         padding: 5px 10px !important;
     }
 
-    /* .mb-3 {
-        margin-bottom: 2rem !important;
-    } */
-
     .placement .para {
-        padding: 20px 70px;
-        text-align: justify;
-        /* font-size: 20px; */
+        padding: 20px 48px;
+        text-align: center;
+        font-size: 16px;
     }
 
     .placement-1 {
@@ -1175,30 +1340,29 @@ a:hover {
     }
 
     .bg-img {
-        height: 390px;
-        width: 550px;
+        height: 340px;
+        width: 482px;
     }
 
     .bg-mask-2 {
         width: 110px;
         height: 120px;
-        /* left: 48px; */
-        /* top: 1247px; */
+        left: -45px;
+        top: 105px;
     }
 
     .mask-img-2 {
-        /* top: 310%; */
+        transform: rotateY(-180deg);
+        right: -45px;
+        bottom: 78px;
     }
 
     .fullstack-div {
         min-height: 300px;
-        line-height: 354px;
-        padding-left: 49px !important;    
+        line-height: 300px;
+        padding-left: 52px !important;    
     }
 
-    .header-main {
-        padding: 0px 137px;
-    }
 
     .carousel-inner {
         position: relative;
@@ -1208,21 +1372,19 @@ a:hover {
     }
 
     .offer .para {
-        color: #ffffff;
-        margin-top: 20px;
-        text-align: justify;
-        padding: 20px 82px;
-        font-size: 20px;
+        text-align: center;
+        padding: 20px 40px 0px;
+        font-size: 16px;
     }
 
     .justify-content-evenly {
         justify-content: space-around !important;
         margin: auto;
-        width: 88%;
+        width: 94%;
     }
 
     .para-s {
-        width: 100%;
+        width: 88%;
         text-align: justify;
         font-size: 16px;
     }
@@ -1233,6 +1395,7 @@ a:hover {
         margin-left: 26px;
         font-size: 12px;
         padding-top: 10px;
+        font-weight: 500;
     }
 
     .service-col {
@@ -1262,7 +1425,7 @@ a:hover {
 
     .s-v3 {
         position: relative;
-        left: 16px;
+        left: 14x;
     }
 
     .serv-col-4 {
@@ -1286,7 +1449,7 @@ a:hover {
     /* header main */
 
     .header-main ul li a {
-        font-size: 18px;
+        font-size: 20px !important;
     }
 
     .header-main ul li {
@@ -1317,16 +1480,17 @@ a:hover {
     }
 
     .quick {
-        left: -155px;
+        left: -127px;
         color: #fff;
-        top: 30%;
+        top: 180px;
         height: 50px;
         width: 254px;
         font-size: 30px;
     }
 
     .feedback_form_area {
-        top: 16px;
+        left: -17px;
+        top: 109px;
     }
 
     .feedback_form_area_inner {
@@ -1335,20 +1499,31 @@ a:hover {
     /* banner end */
 
     /* placement section  */
+
     .placement .span-1, .placement .span-2 {
         font-size: 40px !important;
     }
     
-    .placement .para {
-        /* font-size: 20px !important; */
+    .placement .para, .courses .para, .offer .para, .para-s {
+        font-size: 20px !important;
+    }
+
+    .slider-container>*>* {
+        height: 65px;
+
+    }
+
+    .offer p {
+        font-size: 25px;
     }
 
     .bg-mask-2{
-        left: 135px;
+        left: 45px;
     }
 
     .mask-img-2 {
-        top: 294%;
+        bottom: 76px;
+        right: 45px;
     }
 
     .Vector-1 {
@@ -1360,8 +1535,30 @@ a:hover {
         z-index: 5;
     } 
 
+    .vector-removebg {
+        left: 10px;
+    }
+
+    .s-v3 {
+        position: relative;
+        left: 1px;
+    }
+
     .services .vector4 img {
-        left: 37px !important;
+        left: 27px !important;
+    }
+
+    .why-s, .nschool-s {
+        font-size: 40px;
+    }
+
+    .h4-serv {
+        font-size: 25px;
+    }
+
+    .para-s {
+        font-size: 15px;
+        text-align: justify;
     }
 }
-/* ------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------ *
