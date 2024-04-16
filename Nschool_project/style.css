@@ -691,6 +691,96 @@ svg:hover polygon.icon {
 
 /* placement stories section end */
 
+/* faq start */
+
+.faq{
+    margin: 10% auto;
+}
+
+.faq img {
+    object-fit: contain;
+}
+
+/* faq end */
+
+/* blog start */
+
+.blog .offer{
+    background-color: #f6fafb;
+}
+
+.blog .offer .para {
+    color: #000000;
+}
+
+.blog img {
+    width: 100%;
+    height: auto;
+}
+
+.blog .offer .slider-container {
+    min-height: 400px;
+    /* width: 100%; */
+    /* height: auto; */
+}
+
+.blog .offer {
+    padding-bottom: 20px;
+}
+
+.blog .offer .slider-container li {
+    width: 100%;
+    height: 100%;
+    margin: 20%;
+    overflow: hidden;
+}
+
+/* blog end */
+
+/* footer start */
+
+.footer {
+    padding: 5%;
+}
+
+.footer h3, .footer p, .footer ul li {
+    color: #ffffff;
+}
+
+.footer h5 {
+    color: #f17424;
+}
+
+.footer ul {
+    padding-left: 0px;
+    padding-top: 20px;
+}
+
+.footer ul li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+/* footer start */
+
+/* nextfooter start */
+
+.nextfooter {
+    padding: 20px 0px;
+}
+
+.nextfooter p {
+    color: #ffffff;
+}
+
+.nextfooter .footer-div {
+    width: 95%;
+    margin: 0% 0% 0% 2%;
+}
+
+/* nextfooter start */
+
+
 /* media query  */
 
 /* --------------------------------------------------------------------------------------- */
@@ -1273,6 +1363,36 @@ svg:hover polygon.icon {
     }
 
     /* placement stories section end */
+
+    /* blog start */
+
+    .blog .offer .slider-container {
+        margin-left: 30% !important;
+    }
+
+    .blog .offer .slider-container li{
+        width: 100%;
+        height: 87%;
+        margin: 0% 20% 0% 0%;
+        overflow: hidden;
+    }
+    
+
+    .blog .offer .slider-container li .card {
+        width: 20rem !important;
+        height: 20rem;
+        border-radius: 10px;
+    }
+
+    .blog .offer .slider-container li .card iframe {
+        width: 20rem !important;
+        height: 20rem;
+        border-radius: 10px;
+    }
+
+
+    /* blog end */
+
 }
 
 /* Tablet Devices (portrait and landscape) */
