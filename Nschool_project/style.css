@@ -598,15 +598,14 @@ svg:hover polygon.icon {
     height: 600px;
 }
 
-.slider-container {
-    height: 444px !important;
+.testimonial-div .slider-container {
+    min-height: 400px;
 }
 
-.slides-div {
-    /* background-color: white; */
-    top: -58px;
+.testimonial-div .slides-div {
+    top: -255px;
     width: 100%;
-    height: 444px;
+    /* padding: 1px; */
 }
 
 .color-btn {
@@ -623,7 +622,8 @@ svg:hover polygon.icon {
 }
 
 .slide-img-div {
-    margin: 20px 0px 0px 10px;
+    margin: 0px 20px;
+    padding: 20px 0px 0px 10px;
 }
 
 .slide1 img, .slide2 img, .slide3 img {
@@ -668,9 +668,28 @@ svg:hover polygon.icon {
 }
 
 
-
 /* testimonial section end */
 
+/* placement stories section start */
+
+.stories .offer .slider-container {
+    min-height: 400px;
+    /* width: 100%; */
+    /* height: auto; */
+}
+
+.stories .offer {
+    padding-bottom: 20px;
+}
+
+.stories .offer .slider-container li {
+    width: 100%;
+    height: 100%;
+    margin: 20%;
+    overflow: hidden;
+}
+
+/* placement stories section end */
 
 /* media query  */
 
@@ -756,17 +775,26 @@ svg:hover polygon.icon {
 
     /* testimonial section start */
 
-    .slides-div {
-        top: -183px !important;
+    .testimonial-div .slides-div {
+        top: -230px !important;
         width: 177% !important;
         margin: 0% auto !important;
         left: 20% !important;
     }
 
+    .slide-img-div h3{
+        width: 80%;
+    }
+
+    .slide-img-div p{
+        width: 80%;
+        padding-bottom: 20px;
+    }
+
     .content h1 {
         padding: 0px;
         width: 117%;
-        margin-top: 20%;
+        margin-top: 10%;
         position: relative;
         left: -22% !important;
     }
@@ -777,12 +805,40 @@ svg:hover polygon.icon {
         left: -26% !important;
     }
 
+    .testimonial-div .slider-container {
+        min-height: 520px;
+    }
+
     .slide1, .slide2, .slide3 {
-        overflow : hidden;
+        min-height: 520px;
+        overflow: hidden;
+    }
+
+    .btn-position {
+        top: 326px !important;
+        right: 5px;
+    }
+
+    .slide-img-div h3, .slide-img-div p{
+        text-align: center;
+    }
+
+    .slide-img-div img{
+        margin-left: 82px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .bg-image {
+        height: 1000px;
     }
 
 
     /* testimonial section end */
+
+    .stories .offer .slider-container {
+        margin-left: 30%;
+    }
 }
 
 @media only screen and (max-width:376px) {
@@ -834,6 +890,41 @@ svg:hover polygon.icon {
         display: flex;
         justify-content: space-between;
     }
+
+    /* testimonial section start */
+
+    .testimonial-div .slides-div {
+        top: -136px;
+    }
+
+    .testimonial-div .slider-container {
+        min-height: 630px !important;
+    }
+
+    .slide1, .slide2, .slide3 {
+        min-height: 630px;
+        overflow: hidden;
+    }
+
+    .slide-img-div h3, .slide-img-div p{
+        text-align: center;
+    }
+
+    .slide-img-div img{
+        margin-left: 50px;
+        text-align: center;
+    }
+
+    .btn-position {
+        top: 450px !important;
+    }
+
+    .slide-img-div img {
+        margin-left: 68px;
+        text-align: center;
+    }
+
+    /* testimonial section end */
 }
 
 /* Mobile device (portrait and landscape) */
@@ -1154,6 +1245,34 @@ svg:hover polygon.icon {
     
 
     /* testimonial section end */
+
+    /* placement stories section end */
+
+    .stories .offer .slider-container {
+        margin-left: 30% !important;
+    }
+
+    .stories .offer .slider-container li{
+        width: 100%;
+        height: 87%;
+        margin: 0% 20% 0% 0%;
+        overflow: hidden;
+    }
+    
+
+    .stories .offer .slider-container li .card {
+        width: 20rem !important;
+        height: 20rem;
+        border-radius: 10px;
+    }
+
+    .stories .offer .slider-container li .card iframe {
+        width: 20rem !important;
+        height: 20rem;
+        border-radius: 10px;
+    }
+
+    /* placement stories section end */
 }
 
 /* Tablet Devices (portrait and landscape) */
@@ -1358,11 +1477,11 @@ svg:hover polygon.icon {
     /* testimonial section start */
 
     .slides-div {
-        top: -35px;
+        top: -35px !important;
     }
 
     .btn-position {
-        top: 415px;
+        top: 467px;
         right: 90px;
     }
 
@@ -1371,7 +1490,7 @@ svg:hover polygon.icon {
 
 /* Laptop Devices (portrait and landscape) */
 
-@media only screen and (min-width:1025px) and (max-width:1440px) {
+@media only screen and (min-width:1025px) and (max-width:1441px) {
     /* css for laptop devices */
     .header {
         padding: 0px 95px 0px 103px;
@@ -1618,7 +1737,7 @@ svg:hover polygon.icon {
      /* testimonial section start */
 
      .slides-div {
-        top: -73px;
+        top: -73px !important;
     }    
 
     /* testimonial section end */
