@@ -600,6 +600,12 @@ svg:hover polygon.icon {
 
 .testimonial-div .slider-container {
     min-height: 400px;
+    transform: rotate(-180deg);
+}
+
+.testimonial-div .slider-container .slide1, .testimonial-div .slider-container .slide2, .testimonial-div .slider-container .slide3 {
+    /* min-height: 400px; */
+    transform: rotate(-180deg);
 }
 
 .testimonial-div .slides-div {
