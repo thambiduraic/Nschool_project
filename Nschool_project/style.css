@@ -175,11 +175,6 @@ svg:hover polygon.icon {
     font-size: 16px !important;
 }
 
-.container-fluid {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
 .header-main li a:hover{
     color: #f17424;
 }
@@ -205,14 +200,14 @@ svg:hover polygon.icon {
 }
 
 .span-1 {
-    font-size: 35px;
+    font-size: 40px;
     padding-right: 5px;
     color: #19467E;
     font-weight: 600;
 }
 
 .span-2 {
-    font-size: 35px;
+    font-size: 40px;
     color: #f17424;
     font-weight: 600;
 }
@@ -518,11 +513,13 @@ svg:hover polygon.icon {
 
 .why-s {
     color: #19467E;
+    font-size: 40px;
     margin-bottom: 0px;
 }
 
 .nschool-s {
     color: #f17424;
+    font-size: 40px;
 }
 
 .Untitled-s {
@@ -583,7 +580,6 @@ svg:hover polygon.icon {
 
 .testimonial-1-div {
     margin-top: 10%;
-    /* margin-bottom: 10%; */
 }
 
 .testimonial-2-div {
@@ -604,14 +600,13 @@ svg:hover polygon.icon {
 }
 
 .testimonial-div .slider-container .slide1, .testimonial-div .slider-container .slide2, .testimonial-div .slider-container .slide3 {
-    /* min-height: 400px; */
     transform: rotate(-180deg);
 }
 
 .testimonial-div .slides-div {
     top: -255px;
-    width: 100%;
-    /* padding: 1px; */
+    width: 90%;
+    gap: 6%;
 }
 
 .color-btn {
@@ -646,10 +641,19 @@ svg:hover polygon.icon {
 .content h1 {
     text-transform: capitalize;
     margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.content .span-1 {
+    padding-bottom: 10px;
 }
 
 .content h1, .content p {
-    padding: 0px 42px;
+    padding: 0% 15%;
+}
+
+.content .para {
+    font-size: 16px;
 }
 
 .btn-position {
@@ -890,7 +894,7 @@ svg:hover polygon.icon {
     .content h1 {
         padding: 0px;
         width: 117%;
-        margin-top: 10%;
+        margin-top: 5%;
         position: relative;
         left: -22% !important;
     }
@@ -1018,6 +1022,18 @@ svg:hover polygon.icon {
     .slide-img-div img {
         margin-left: 68px;
         text-align: center;
+    }
+
+    .bg-image {
+        height: 1270px !important;
+    }
+
+    .testimonial-2-div {
+        margin-top: 27% !important;
+    }
+
+    .content h1 {
+        font-size: 26px;
     }
 
     /* testimonial section end */
@@ -1322,11 +1338,11 @@ svg:hover polygon.icon {
         left: -10%;
     }
 
-    .slides-div {
-        top: -240px;
-        width: 123%;
-        margin: 0% auto !important;
-        left: 48%;
+    .testimonial-div .slides-div {
+        top: -222px;
+        width: 120%;
+        left: 45%;
+        gap: 6%;
     }
 
     .slide1, .slide2, .slide3 {
@@ -1863,7 +1879,7 @@ svg:hover polygon.icon {
      /* testimonial section start */
 
      .slides-div {
-        top: -73px !important;
+        top: -53px !important;
     }    
 
     /* testimonial section end */
