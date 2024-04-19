@@ -684,8 +684,12 @@ svg:hover polygon.icon {
 
 
 .stories .offer .slider-container {
-    width: 96%;
+    width: 90%;
     margin: auto !important;
+}
+
+.stories .para {
+    padding: 0px 25px 0px 50px !important;
 }
 
 /* placement stories section end */
@@ -693,13 +697,23 @@ svg:hover polygon.icon {
 /* faq start */
 
 .faq{
-    margin: 10% auto;
+    margin: 5% auto;
+}
+
+.faq h3 {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.faq .row {
+    margin-right: 0px !important;
 }
 
 .faq img {
     object-fit: cover;
     width: 60%;
     margin-left: 20%;
+    margin-top: 30%;
 }
 
 /* faq end */
@@ -936,6 +950,16 @@ svg:hover polygon.icon {
         height: 300px;
         margin: auto !important;
     }
+
+    /* stories section end */
+
+    /* faq start */
+
+    .faq img {
+        margin: 10% 0% 10% 20%;
+    }
+
+    /* faq end */
 }
 
 @media only screen and (max-width:376px) {
