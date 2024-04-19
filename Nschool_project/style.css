@@ -682,21 +682,10 @@ svg:hover polygon.icon {
 
 /* placement stories section start */
 
+
 .stories .offer .slider-container {
-    min-height: 400px;
-    /* width: 100%; */
-    /* height: auto; */
-}
-
-.stories .offer {
-    padding-bottom: 20px;
-}
-
-.stories .offer .slider-container li {
-    width: 100%;
-    height: 100%;
-    margin: 20%;
-    overflow: hidden;
+    width: 96%;
+    margin: auto !important;
 }
 
 /* placement stories section end */
@@ -708,7 +697,9 @@ svg:hover polygon.icon {
 }
 
 .faq img {
-    object-fit: contain;
+    object-fit: cover;
+    width: 60%;
+    margin-left: 20%;
 }
 
 /* faq end */
@@ -936,8 +927,14 @@ svg:hover polygon.icon {
 
     /* testimonial section end */
 
-    .stories .offer .slider-container {
+    /* .stories .offer .slider-container {
         margin-left: 30%;
+    } */
+
+    .stories .offer .slider-container {
+        width: 96% !important;
+        height: 300px;
+        margin: auto !important;
     }
 }
 
@@ -1357,35 +1354,23 @@ svg:hover polygon.icon {
     
 
     /* testimonial section end */
+/* --------------------------------------------------------------- */
+    /* placement stories section start */
 
-    /* placement stories section end */
+    .stories {
+        width: 100%;
+        min-height: 500px;
+    }
 
     .stories .offer .slider-container {
-        margin-left: 30% !important;
+        width: 60%;
+        height: 300px;
+        margin: auto !important;
     }
 
-    .stories .offer .slider-container li{
-        width: 100%;
-        height: 87%;
-        margin: 0% 20% 0% 0%;
-        overflow: hidden;
-    }
-    
-
-    .stories .offer .slider-container li .card {
-        width: 20rem !important;
-        height: 20rem;
-        border-radius: 10px;
-    }
-
-    .stories .offer .slider-container li .card iframe {
-        width: 20rem !important;
-        height: 20rem;
-        border-radius: 10px;
-    }
 
     /* placement stories section end */
-
+/* ------------------------------------------------------------------------ */
     /* blog start */
 
     .blog .offer .slider-container {
@@ -1960,10 +1945,10 @@ svg:hover polygon.icon {
         font-size: 20px !important;
     }
 
-    .slider-container>*>* {
+    /* .slider-container>*>* {
         height: 65px;
 
-    }
+    } */
 
     .offer p {
         font-size: 25px;
