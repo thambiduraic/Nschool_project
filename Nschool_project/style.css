@@ -777,8 +777,9 @@ svg:hover polygon.icon {
 /* footer start */
 
 .footer {
-    padding: 5%;
+    padding: 0px 40px 0px 64px;
 }
+
 
 .footer h3 {
     color: #ffffff;
@@ -807,12 +808,12 @@ svg:hover polygon.icon {
     justify-content: flex-start;
 }
 
-/* footer start */
+/* footer end */
 
 /* nextfooter start */
 
 .nextfooter {
-    padding: 20px 0px;
+    padding: 10px 0px 0px 25px;
 }
 
 .nextfooter p {
@@ -822,6 +823,10 @@ svg:hover polygon.icon {
 .nextfooter .footer-div {
     width: 97%;
     padding: 0% 2% 0% 1%;
+}
+
+.rights-div {
+    padding-right: 80px;
 }
 
 /* nextfooter start */
@@ -997,6 +1002,10 @@ svg:hover polygon.icon {
     /* blog end */
 
     /* footer start */
+
+    .footer {
+        padding: 0px 0px 0px 30px !important;
+    }
 
     .contact-div {
         position:unset !important;
@@ -1454,13 +1463,17 @@ svg:hover polygon.icon {
 
     /* footer start */
 
+    .footer {
+        padding: 0px 0px 0px 7px;
+    }
+
+    .nextfooter {
+        padding: 10px 0px 0px 42px;
+    }
+
     .contact-div {
         position: relative;
         left: -166px;
-    }
-
-    .addres-div-G {
-        padding: 10px !important;
     }
 
     /* footer end */
@@ -1691,6 +1704,10 @@ svg:hover polygon.icon {
 
     .contact-div {
         margin-left: 0px;
+    }
+
+    .nextfooter {
+        padding: 10px 0px 0px 44px;
     }
 }
 
@@ -1962,9 +1979,14 @@ svg:hover polygon.icon {
         margin-left: 0px;
     }
 
-    .addres-div-G {
-        padding: 10px !important;
+    .footer {
+        padding: 0px 0px 0px 0px;
     }
+
+    .nextfooter {
+        padding: 10px 0px 0px 77px;
+    }
+
 }
 
 /* Desktop Devices (portrait and landscape) */
