@@ -703,6 +703,7 @@ svg:hover polygon.icon {
 .faq h3 {
     padding-left: 20px;
     padding-bottom: 20px;
+    font-size: 40px;
 }
 
 .faq .row {
@@ -724,19 +725,40 @@ svg:hover polygon.icon {
     background-color: #f6fafb;
 }
 
+.blog .offer .card {
+    background: transparent;
+    border: 1px solid #718daf;
+}
+
+.blog .offer h3 {
+
+    font-size: 40px;
+}
+
 .blog .offer .para {
     color: #000000;
 }
 
 .blog img {
     width: 100%;
+    padding: 10px;
     height: auto;
+    border-bottom: 1px solid #718daf;
 }
 
 .blog .offer .slider-container {
     min-height: 400px;
-    /* width: 100%; */
-    /* height: auto; */
+    width: 90%;
+    height: auto;
+    margin-left: 5% !important;
+}
+
+.blog .offer .card-text {
+    font-size: 16px;
+}
+
+.blog .offer .card-body a {
+    color: #000000;
 }
 
 .blog .offer {
@@ -941,10 +963,6 @@ svg:hover polygon.icon {
 
     /* testimonial section end */
 
-    /* .stories .offer .slider-container {
-        margin-left: 30%;
-    } */
-
     .stories .offer .slider-container {
         width: 96% !important;
         height: 300px;
@@ -960,6 +978,14 @@ svg:hover polygon.icon {
     }
 
     /* faq end */
+
+    /* blog start */
+
+    .blog .offer .slider-container {
+        width: 70% !important;
+    }
+    
+    /* blog end */
 }
 
 @media only screen and (max-width:376px) {
@@ -1398,29 +1424,11 @@ svg:hover polygon.icon {
     /* blog start */
 
     .blog .offer .slider-container {
-        margin-left: 30% !important;
+        min-height: 420px;
+        width: 60%;
+        height: auto;
+        margin-left: 20% !important;
     }
-
-    .blog .offer .slider-container li{
-        width: 100%;
-        height: 87%;
-        margin: 0% 20% 0% 0%;
-        overflow: hidden;
-    }
-    
-
-    .blog .offer .slider-container li .card {
-        width: 20rem !important;
-        height: 20rem;
-        border-radius: 10px;
-    }
-
-    .blog .offer .slider-container li .card iframe {
-        width: 20rem !important;
-        height: 20rem;
-        border-radius: 10px;
-    }
-
 
     /* blog end */
 
