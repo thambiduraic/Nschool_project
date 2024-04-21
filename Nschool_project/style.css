@@ -780,8 +780,12 @@ svg:hover polygon.icon {
     padding: 5%;
 }
 
-.footer h3, .footer p, .footer ul li {
+.footer h3 {
     color: #ffffff;
+}
+
+.footer p, .footer ul li {
+    color: #bcc8d7;
 }
 
 .footer h5 {
@@ -796,6 +800,11 @@ svg:hover polygon.icon {
 .footer ul li {
     list-style: none;
     padding-bottom: 10px;
+}
+
+.contact-div {
+    display: flex;
+    justify-content: flex-start;
 }
 
 /* footer start */
@@ -986,6 +995,12 @@ svg:hover polygon.icon {
     }
     
     /* blog end */
+
+    /* footer start */
+
+    .contact-div {
+        position:unset !important;
+    }
 }
 
 @media only screen and (max-width:376px) {
@@ -1084,6 +1099,12 @@ svg:hover polygon.icon {
     }
 
     /* testimonial section end */
+
+    /* footer start */
+
+    .addres-div-G {
+        padding: 10px !important;
+    }
 }
 
 /* Mobile device (portrait and landscape) */
@@ -1431,6 +1452,19 @@ svg:hover polygon.icon {
 
     /* blog end */
 
+    /* footer start */
+
+    .contact-div {
+        position: relative;
+        left: -166px;
+    }
+
+    .addres-div-G {
+        padding: 10px !important;
+    }
+
+    /* footer end */
+
 }
 
 /* Tablet Devices (portrait and landscape) */
@@ -1644,6 +1678,20 @@ svg:hover polygon.icon {
     }
 
     /* testimonial section end */
+
+    /* footer start */
+
+    .company-div {
+        margin-left: 40px;
+    }
+
+    .courses-div {
+        margin-left: -70px;
+    }
+
+    .contact-div {
+        margin-left: 0px;
+    }
 }
 
 /* Laptop Devices (portrait and landscape) */
@@ -1899,6 +1947,24 @@ svg:hover polygon.icon {
     }    
 
     /* testimonial section end */
+
+    /* footer start */
+
+    .company-div {
+        margin-left: 80px;
+    }
+
+    .courses-div {
+        margin-left: -70px;
+    }
+
+    .contact-div {
+        margin-left: 0px;
+    }
+
+    .addres-div-G {
+        padding: 10px !important;
+    }
 }
 
 /* Desktop Devices (portrait and landscape) */
