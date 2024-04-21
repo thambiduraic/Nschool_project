@@ -957,16 +957,16 @@ svg:hover polygon.icon {
     }
 
     .bg-image {
-        height: 1000px;
+        height: 1060px !important;
     }
 
 
     /* testimonial section end */
 
     .stories .offer .slider-container {
-        width: 96% !important;
+        width: 70% !important;
         height: 300px;
-        margin: auto !important;
+        margin-left: 15% !important;
     }
 
     /* stories section end */
@@ -1109,11 +1109,14 @@ svg:hover polygon.icon {
     .lorem-p {
         padding: 0px 0px 10px 0px;
         font-weight: 600;
-        /* width: 70%; */
     }
 
     .banner {
         padding: 0px 42px;
+    }
+
+    .banner .span-1, .banner .span-2 {
+        font-size: 32px;
     }
 
     .mask-group-1 {
@@ -1189,10 +1192,6 @@ svg:hover polygon.icon {
         height: 34%;
     }
 
-    .banner .span-1, .banner .span-2 {
-        width: 70%;
-    }
-
     .placement-1 {
         text-align: center;
     }
@@ -1264,7 +1263,7 @@ svg:hover polygon.icon {
     .justify-content-evenly {
         justify-content: space-around !important;
         margin: auto;
-        /* width: 98%; */
+        width: 98%;
     }
 
     .col-12-c {
