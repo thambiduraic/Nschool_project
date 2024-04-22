@@ -855,7 +855,7 @@ svg:hover polygon.icon {
 
     /* header start */
     .header-main, .courses, .offer, .footer, .nextfooter {
-        width: 103%;
+        width: 102%;
     }
 
     .banner img {
@@ -876,7 +876,7 @@ svg:hover polygon.icon {
     }
 
     .quick {
-        left: -117px !important;
+        left: -110px !important;
         top: 158px !important;
     }
 
@@ -945,7 +945,7 @@ svg:hover polygon.icon {
     /* testimonial section start */
 
     .testimonial-div {
-        background-color: #f6fafb;
+        padding: 0px;
     }
 
     .testimonial-div .slides-div {
@@ -1004,7 +1004,9 @@ svg:hover polygon.icon {
     }
 
     .bg-image {
+        right: 4px !important;
         height: 1060px !important;
+        background-size: 400% 90% !important;
     }
 
 
@@ -1014,10 +1016,6 @@ svg:hover polygon.icon {
         width: 70% !important;
         height: 300px;
         margin-left: 15% !important;
-    }
-
-    .bg-image {
-        right: 0px !important;
     }
 
     /* stories section end */
