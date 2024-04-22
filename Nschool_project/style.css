@@ -832,7 +832,12 @@ svg:hover polygon.icon {
 
 .nextfooter .footer-div {
     width: 97%;
-    padding: 0% 2% 0% 1%;
+    padding: 2% 2% 2% 1%;
+}
+
+.nextfooter .footer-div {
+    width: 97%;
+    padding: 2% 2% 2% 1%;
 }
 
 .rights-div {
@@ -853,8 +858,16 @@ svg:hover polygon.icon {
         width: 103%;
     }
 
+    .banner img {
+        margin-top: 20px !important;
+    }
+
     .placement .para, .courses .para, .offer .para {
         text-align: justify !important;
+    }
+
+    .placement .para {
+        padding: 20px 0px 0px 0px !important;
     }
 
     .vector4 img {
@@ -863,7 +876,7 @@ svg:hover polygon.icon {
     }
 
     .quick {
-        left: -108px !important;
+        left: -117px !important;
         top: 158px !important;
     }
 
@@ -876,7 +889,7 @@ svg:hover polygon.icon {
     }
 
     .placement, .courses .para, .offer .para {
-        padding: 20px 34px 0px 44px !important;
+        padding: 20px 50px 0px 44px !important;
     }
 
     .placement img {
@@ -889,7 +902,7 @@ svg:hover polygon.icon {
     }
 
     .offer .para {
-        padding: 0px 9px 0px 30px !important;
+        padding: 0px 41px 0px 30px !important;
     }
 
     .para1-s {
@@ -931,6 +944,10 @@ svg:hover polygon.icon {
 
     /* testimonial section start */
 
+    .testimonial-div {
+        background-color: #f6fafb;
+    }
+
     .testimonial-div .slides-div {
         top: -230px !important;
         width: 177% !important;
@@ -956,9 +973,10 @@ svg:hover polygon.icon {
     }
 
     .content p {
-        width: 124%;
+        width: 100%;
         position: relative;
-        left: -26% !important;
+        left: -14% !important;
+        text-align: justify !important;
     }
 
     .testimonial-div .slider-container {
@@ -971,7 +989,7 @@ svg:hover polygon.icon {
     }
 
     .btn-position {
-        top: 326px !important;
+        top: 356px !important;
         right: 5px;
     }
 
@@ -998,12 +1016,24 @@ svg:hover polygon.icon {
         margin-left: 15% !important;
     }
 
+    .bg-image {
+        right: 0px !important;
+    }
+
     /* stories section end */
 
     /* faq start */
 
+    .faq {
+        margin-top: 10%;
+    }
+
     .faq img {
         margin: 10% 0% 10% 20%;
+    }
+
+    .accordion {
+        padding: 20px;
     }
 
     /* faq end */
@@ -1056,12 +1086,6 @@ svg:hover polygon.icon {
 
     .button {
         font-size: 14px;
-    }
-
-    .quick {
-        left: -111px !important;
-        height: 30px !important;
-        width: 188px !important;
     }
 
     .feedback_form_area {
@@ -1128,11 +1152,10 @@ svg:hover polygon.icon {
 
     /* testimonial section end */
 
-    /* footer start */
-
-    .addres-div-G {
-        padding: 10px !important;
+    .faq img {
+        margin-top: 10% !important;
     }
+
 }
 
 /* Mobile device (portrait and landscape) */
@@ -1480,7 +1503,7 @@ svg:hover polygon.icon {
         min-height: 420px;
         width: 60%;
         height: auto;
-        margin-left: 20% !important;
+        margin-left: 20%;
     }
 
     /* blog end */
