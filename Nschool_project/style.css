@@ -1770,6 +1770,10 @@ svg:hover polygon.icon {
         top: -35px !important;
     }
 
+    .content h1, .content p {
+        padding: 0% 15% 0% 0%;
+    }
+
     .btn-position {
         top: 428px;
         right: 55px;
@@ -2059,6 +2063,10 @@ svg:hover polygon.icon {
     }
 
      /* testimonial section start */
+
+    .content h1, .content p {
+        padding: 0% 40% 0% 0%;
+    }
 
      .slides-div {
         top: -53px !important;
