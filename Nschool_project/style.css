@@ -1022,6 +1022,10 @@ svg:hover polygon.icon {
         padding: 0px 0px 0px 30px !important;
     }
 
+    .company-div {
+        margin-left: unset !important;
+    }
+
     .contact-div {
         position:unset !important;
     }
