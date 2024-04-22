@@ -945,6 +945,7 @@ svg:hover polygon.icon {
     /* testimonial section start */
 
     .testimonial-div {
+        
         padding: 0px;
     }
 
@@ -1004,6 +1005,7 @@ svg:hover polygon.icon {
     }
 
     .bg-image {
+        background-color: #f6fafb;
         right: 4px !important;
         height: 1060px !important;
         background-size: 400% 90% !important;
@@ -1037,6 +1039,10 @@ svg:hover polygon.icon {
     /* faq end */
 
     /* blog start */
+    .blog .offer h3 {
+        font-size: 40px;
+        padding: 0px;
+    }
 
     .blog .offer .slider-container {
         width: 70% !important;
@@ -1434,9 +1440,11 @@ svg:hover polygon.icon {
     /* testimonial section start */
 
     .bg-image {
+        background-color: #f6fafb;
         background-size: 100% 90%;
         background-position: center;
         height: 1000px;
+        right: 0px;
     }
 
     .testimonial-2-div {
@@ -1472,7 +1480,7 @@ svg:hover polygon.icon {
     }
     
     .btn-position {
-        top: 220px;
+        top: 255px;
         right: -92px;
     }
     
@@ -1510,6 +1518,15 @@ svg:hover polygon.icon {
         margin-right: 0px !important;
         display: flex;
         justify-content: center;
+    }
+
+    .faq h3 {
+        padding-left: 60px;
+    }
+
+    .accordion {
+        padding-right: 50px;
+        padding-left: 50px;
     }
 
     .img-fluid {
