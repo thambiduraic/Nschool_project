@@ -324,7 +324,7 @@ svg:hover polygon.icon {
     text-align: center;
     text-decoration: none;
     padding: 0px 10px;
-    z-index: -1;
+    z-index: 52;
 }
 
 .quick:hover {
@@ -587,10 +587,12 @@ svg:hover polygon.icon {
 }
 
 .bg-image {
+    position: relative;
     background-image: url(/Nschool_project/NS_PNG/Frame.png);
     background-repeat: no-repeat;
     background-size: 70% 100%;
     background-position: right;
+    right: 20px;
     height: 600px;
 }
 
@@ -662,7 +664,7 @@ svg:hover polygon.icon {
 }
 
 .gap-div-btn {
-    left: 40px !important;
+    left: -120px !important;
 }
 
 .slide1, .slide3 {
@@ -684,7 +686,7 @@ svg:hover polygon.icon {
 
 
 .stories .offer .slider-container {
-    width: 90%;
+    width: 88%;
     margin: auto !important;
 }
 
@@ -700,6 +702,10 @@ svg:hover polygon.icon {
     margin: 5% auto;
 }
 
+.faq-p {
+    font-weight: 500;
+}
+
 .faq h3 {
     padding-left: 20px;
     padding-bottom: 20px;
@@ -708,6 +714,8 @@ svg:hover polygon.icon {
 
 .faq .row {
     margin-right: 0px !important;
+    /* display: flex;
+    justify-content: center; */
 }
 
 .faq img {
@@ -747,10 +755,8 @@ svg:hover polygon.icon {
 }
 
 .blog .offer .slider-container {
-    min-height: 400px;
-    width: 90%;
-    height: auto;
-    margin-left: 5% !important;
+    width: 94%;
+    margin: auto !important;
 }
 
 .blog .offer .card-text {
@@ -766,9 +772,9 @@ svg:hover polygon.icon {
 }
 
 .blog .offer .slider-container li {
-    width: 100%;
+    width: 94%;
     height: 100%;
-    margin: 20%;
+    margin: 10% 0% 10% 0%;
     overflow: hidden;
 }
 
@@ -785,8 +791,12 @@ svg:hover polygon.icon {
     color: #ffffff;
 }
 
-.footer p, .footer ul li {
+.footer p, .footer ul li a, .nextfooter a{
     color: #bcc8d7;
+}
+
+.footer ul li a:hover, .nextfooter a:hover{
+    color: #f17424;
 }
 
 .footer h5 {
@@ -837,6 +847,11 @@ svg:hover polygon.icon {
 /* --------------------------------------------------------------------------------------- */
 
 @media only screen and (max-width:426px) {
+
+    /* header start */
+    .header-main, .courses, .offer, .footer, .nextfooter {
+        width: 103%;
+    }
 
     .placement .para, .courses .para, .offer .para {
         text-align: justify !important;
@@ -1201,6 +1216,10 @@ svg:hover polygon.icon {
     }
 /* ------------------------------------------------------------------------------- */
 
+.placement .slider-container {
+    height: 100px;
+}
+
 .slider-container {
     width: 100%;
     height: 100px;
@@ -1412,6 +1431,7 @@ svg:hover polygon.icon {
         text-align: center;
         position: relative;
         left: -10%;
+        padding: 0% 0%;
     }
 
     .testimonial-div .slides-div {
@@ -1428,7 +1448,7 @@ svg:hover polygon.icon {
     
     .btn-position {
         top: 220px;
-        right: 5px;
+        right: -92px;
     }
     
 
@@ -1461,10 +1481,24 @@ svg:hover polygon.icon {
 
     /* blog end */
 
+    .faq .row {
+        margin-right: 0px !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-fluid {
+        margin-top: 0% !important;
+    }
+
     /* footer start */
 
     .footer {
         padding: 0px 0px 0px 7px;
+    }
+
+    .company-div {
+        margin-left: 40px;
     }
 
     .nextfooter {
@@ -1674,6 +1708,15 @@ svg:hover polygon.icon {
         left: 2px;
         top: -41px;
     }
+
+    .Vector-1 {
+        rotate: -180deg;
+        width: 10% !important;
+        height: 232px !important;
+        bottom: -183px;
+        right: -60px;
+        z-index: 5;
+    }
     
     .service-col {
         padding: 1rem 1rem;
@@ -1686,11 +1729,16 @@ svg:hover polygon.icon {
     }
 
     .btn-position {
-        top: 467px;
-        right: 90px;
+        top: 428px;
+        right: 55px;
     }
 
     /* testimonial section end */
+
+    /* faq start */
+
+
+    /* faq end */
 
     /* footer start */
 
@@ -1715,6 +1763,10 @@ svg:hover polygon.icon {
 
 @media only screen and (min-width:1025px) and (max-width:1441px) {
     /* css for laptop devices */
+    .container-fluid {
+        padding: 0px;
+    }
+    
     .header {
         padding: 0px 95px 0px 103px;
     }
@@ -1824,8 +1876,12 @@ svg:hover polygon.icon {
         font-size: 40px;
     }
 
-    .services .vector4 img {
+    /* .services .vector4 img {
         left: 36px !important;
+    } */
+
+    .Vector-1 {
+        right: -55px;
     }
 
     .courses .span-1, .courses .span-2 {
@@ -2042,6 +2098,7 @@ svg:hover polygon.icon {
         height: 50px;
         width: 254px;
         font-size: 30px;
+        z-index: 50;
     }
 
     .feedback_form_area {
