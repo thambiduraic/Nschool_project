@@ -1779,6 +1779,9 @@ svg:hover polygon.icon {
 
     /* faq start */
 
+    .faq img {
+        height: 30%;
+    }
 
     /* faq end */
 
@@ -2062,6 +2065,10 @@ svg:hover polygon.icon {
     }    
 
     /* testimonial section end */
+
+    .faq img {
+        height: 40%;
+    }
 
     /* footer start */
 
